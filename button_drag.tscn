@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3yifp5ye6c4h"]
+
+[ext_resource type="Script" path="res://button_drag.gd" id="1_ard84"]
+
+[node name="Button" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+keep_pressed_outside = true
+text = "CLICK ME"
+script = ExtResource("1_ard84")
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
+[connection signal="pressed" from="." to="." method="_on_pressed"]
